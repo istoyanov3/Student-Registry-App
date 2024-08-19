@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app:
+    image: ivos89/student:1.0.0
+    ports:
+      - "9090:9090" # Map port 3030 on the host to port 3030 in the container
+    environment:
+      - NODE_ENV=production
